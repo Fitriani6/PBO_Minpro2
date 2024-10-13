@@ -18,6 +18,7 @@ Inheritance adalah pewarisan properti dan metodenya superclass ke subclassnya di
 public class SiswaAktif extends DataSiswa {
     private String status = "Aktif";
 }
+
 public class SiswaLulus extends DataSiswa {
     private final String tahunLulus;
 }
