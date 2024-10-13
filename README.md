@@ -99,22 +99,23 @@ public final class ManajemenSiswa2 implements CRUDOperations {
     private static final String tahunAjaran = "2024/2025";
   }  
 ## Penjelasaan Output
-1. Masuk Menu Utama 
+1. Masuk Menu Utama
+   
    ![image](https://github.com/user-attachments/assets/b5e6b95f-9fb2-4d1a-a62a-40d7d0ecc833)
 
-2. Tambah Siswa, Masukkan angka 1 untuk menambah siswa baru disini akan di minta untuk memasukkan nama, apakah siswa ini aktif atau sudah lulus jika aktif maka akan menginputkan kelas sedangkan jika sudah lulus maka akan di minta untuk menginputkan tahun kelulusan
+3. Tambah Siswa, Masukkan angka 1 untuk menambah siswa baru disini akan di minta untuk memasukkan nama, apakah siswa ini aktif atau sudah lulus jika aktif maka akan menginputkan kelas sedangkan jika sudah lulus maka akan di minta untuk menginputkan tahun kelulusan
    ![image](https://github.com/user-attachments/assets/037a1693-2d38-443f-9d47-da8844b79aac)
 
-3. Lihat Data, Masukkan angka 2 untuk lihat data siswa
+4. Lihat Data, Masukkan angka 2 untuk lihat data siswa
    ![image](https://github.com/user-attachments/assets/6a89f428-7de9-47c3-a7bc-35e44b0fe821)
 
-4. Update Data, Masukkan angka 3 untuk meng-update data siswa
+5. Update Data, Masukkan angka 3 untuk meng-update data siswa
    ![image](https://github.com/user-attachments/assets/48094b95-c13e-45e8-9089-6455a0a93e48)
 
-5. Hapus, masukkan angka 4 untuk menghapus data siswa
+6. Hapus, masukkan angka 4 untuk menghapus data siswa
    ![image](https://github.com/user-attachments/assets/87c3cf36-77aa-4209-b0eb-e02c9f4ad283)
 
-6. Keluar, jika sudah selesai maka dapat keluar dari program
+7. Keluar, jika sudah selesai maka dapat keluar dari program
    ![image](https://github.com/user-attachments/assets/f04db54d-c485-449b-9989-8586c1e64010)
 
 
