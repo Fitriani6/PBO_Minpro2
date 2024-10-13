@@ -16,7 +16,7 @@ Didalam packages Siswa berisi class-class yang terkait dengan data siswa, sepert
 Inheritance adalah pewarisan properti dan metodenya superclass ke subclassnya dimana dalam studi kasus saya superclassnya adalah DataSiswa dan subclassnya ada SiswaAktif dan SiswaLulus. SiswaAktif dan SiswaLulus mewarisi properti id, nama, kelas dari DataSiswa.
 
 public class SiswaAktif extends DataSiswa {
-private String status = "Aktif";
+    private String status = "Aktif";
 }
 
 public class SiswaLulus extends DataSiswa {
@@ -62,7 +62,7 @@ public interface CRUDOperations {
 CRUDOperations adalah interface yang menyediakan tempat untuk operasi CRUD jadi interface ini masuk didalam packages manajemensiswa2.
 
 public final class ManajemenSiswa2 implements CRUDOperations {
-    // Implementasi metode CRUD
+
     @Override
     public void tambahSiswa() {
         // logika tambah siswa
@@ -93,6 +93,6 @@ public final class ManajemenSiswa2 implements CRUDOperations {
     private static final ArrayList<DataSiswa> daftarSiswa = new ArrayList<>();
     private static final Scanner scanner = new Scanner(System.in);
     private static final String tahunAjaran = "2024/2025";
-    
+  }  
 ## Penjelasaan Output
 
