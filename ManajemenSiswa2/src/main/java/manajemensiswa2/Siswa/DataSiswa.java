@@ -12,7 +12,7 @@ public class DataSiswa {
     protected int id;
     protected String nama;
     protected String kelas;
-    private static int idSiswa = 1; // Digunakan untuk memberi ID unik setiap siswa
+    private static int idSiswa = 1; 
 
     // Constructor
     public DataSiswa(String nama, String kelas) {
@@ -43,7 +43,7 @@ public class DataSiswa {
         this.kelas = kelas;
     }
 
-    // Method untuk menampilkan data siswa
+    
     public void tampilkanInfo() {
         System.out.println("ID: " + id + ", Nama: " + nama + ", Kelas: " + kelas);
     }
