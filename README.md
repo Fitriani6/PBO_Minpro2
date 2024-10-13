@@ -15,15 +15,16 @@ Didalam packages Siswa berisi class-class yang terkait dengan data siswa, sepert
 1. Inheritance
    Inheritance adalah pewarisan properti dan metodenya superclass ke subclassnya dimana dalam studi kasus saya superclassnya adalah DataSiswa dan subclassnya ada SiswaAktif dan SiswaLulus. SiswaAktif dan SiswaLulus mewarisi properti id, nama, kelas dari DataSiswa.
 public class SiswaAktif extends DataSiswa {
-    private String status = "Aktif";  
+    private String status = "Aktif";  // Properti tambahan untuk SiswaAktif
+    // Constructor dan metode lain...
 }
-
 public class SiswaLulus extends DataSiswa {
-    private final String tahunLulus;  
+    private final String tahunLulus;  // Properti tambahan untuk SiswaLulus
+    // Constructor dan metode lain...
 }
 
 
-2. Encapsulation
+3. Encapsulation
    Encapsulation melibatkan pembungkusan data dengan cara menggunakan getter dan setter untuk melindungi akses langsung ke properti dari luar kelas. dalam studi kasus saya nama dan kelas menjadi properti dari getter dan setter
    // Getter
 public String getNama() {
@@ -45,13 +46,14 @@ public void setKelas(String kelas) {
 
 
 3. Abstraction dan Interface
-   CRUDOperations adalah interface yang mendefinisikan metode CRUD, tapi detail implementasinya disembunyikan. Abstraksi ada karena hanya struktur/metode yang disediakan, dan implementasi disembunyikan sampai di kelas ManajemenSiswa2 
+   CRUDOperations adalah interface yang mendefinisikan metode CRUD, tapi detail implementasinya disembunyikan. Abstraksi ada karena hanya struktur/metode yang disediakan, dan implementasi disembunyikan sampai di kelas ManajemenSiswa2
 public interface CRUDOperations {
     void tambahSiswa();
     void lihatSiswa();
     void updateSiswa();
     void hapusSiswa();
 }
+
 
 CRUDOperations adalah interface yang menyediakan tempat untuk operasi CRUD jadi interface ini masuk didalam packages manajemensiswa2.
 public final class ManajemenSiswa2 implements CRUDOperations {
@@ -81,7 +83,6 @@ public final class ManajemenSiswa2 implements CRUDOperations {
 
 4. Final keyword
    Kelas ManajemenSiswa2 dideklarasikan sebagai final, yang artinya kelas ini tidak bisa dijadikan superclass maka properti tahunAjaran di ManajemenSiswa2 juga dideklarasikan sebagai final, sehingga nilainya tidak bisa diubah setelah diinisialisasi. final ini juga mencegah terjadinya pewarisan pada kelas ManajemenSiswa2.
-   
 public final class ManajemenSiswa2 implements CRUDOperations {
     private static final String tahunAjaran = "2024/2025";  // Final untuk mencegah perubahan nilai
 }
