@@ -16,7 +16,7 @@ Didalam packages Siswa berisi class-class yang terkait dengan data siswa, sepert
 Inheritance adalah pewarisan properti dan metodenya superclass ke subclassnya dimana dalam studi kasus saya superclassnya adalah DataSiswa dan subclassnya ada SiswaAktif dan SiswaLulus. SiswaAktif dan SiswaLulus mewarisi properti id, nama, kelas dari DataSiswa.
 
 public class SiswaAktif extends DataSiswa {
-    private String status = "Aktif";
+private String status = "Aktif";
 }
 
 public class SiswaLulus extends DataSiswa {
