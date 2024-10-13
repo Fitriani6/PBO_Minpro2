@@ -26,7 +26,6 @@ public final class ManajemenSiswa2 implements CRUDOperations {
     DataSiswa siswaBaru;
 
     if (status.equalsIgnoreCase("y")) {
-        // Jika siswa aktif, masukkan kelas
         System.out.print("Masukkan kelas siswa: ");
         String kelas = scanner.nextLine();
         siswaBaru = new SiswaAktif(nama, kelas);
